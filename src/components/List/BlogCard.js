@@ -3,13 +3,13 @@ import {hashHistory} from 'react-router';
 
 
 class BlogCard extends Component {
-  handleClick(){
-    let address = `/blog/${this.props.url}`;
-    hashHistory.push(address);
-  }
   // handleClick(){
-  //   this.context.router.push(`blog/${this.props.url}`);
+  //   let address = `/blog/${this.props.url}`;
+  //   hashHistory.push(address);
   // }
+  handleClick(){
+    this.context.router.push(`blog/${this.props.url}`);
+  }
   render(){
 
     let styles={
@@ -57,7 +57,7 @@ BlogCard.defaultProps = {
   index: 1,
   date: '2016.7.19',
 };
-// BlogCard.contextTypes = {
-//   router:React.PropTypes.object.isRequired
-// }
+BlogCard.contextTypes = {
+  router:React.PropTypes.object.isRequired
+}
 export default BlogCard;
