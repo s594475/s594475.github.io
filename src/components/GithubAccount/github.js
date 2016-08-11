@@ -7,7 +7,6 @@ function getRepos(username){
 function getUserInfo(username){
   return axios.get(`https://api.github.com/users/${username}`);
 };
-
 let github = {
   getGithubInfo(username){
     return axios.all([getRepos(username), getUserInfo(username)])
