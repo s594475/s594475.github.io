@@ -60,10 +60,10 @@ class AppLeftNav extends React.Component {
                 <Link to="/" style={styles.link} activeStyle={{color:'red'}} onlyActiveOnIndex={true}>首页</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose}>
-                <Link to="blog" style={styles.link} activeStyle={{color:'red'}}>博客</Link>
+                <Link to="/blog" style={styles.link} activeStyle={{color:'red'}}>博客</Link>
             </MenuItem>
             <MenuItem onTouchTap={this.handleClose}>
-                <Link to="about" style={styles.link} activeStyle={{color:'red'}}>关于</Link>
+                <Link to="/about" style={styles.link} activeStyle={{color:'red'}}>关于</Link>
             </MenuItem>
 
         </Drawer>
