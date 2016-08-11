@@ -4,7 +4,7 @@ import './style/main.css';
 import './style/hljs.css';
 import './style/post.css';
 import {render} from 'react-dom';
-import {Router,hashHistory} from 'react-router';
+import {Router,browserHistory} from 'react-router';
 import routes from './routes.js';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -14,5 +14,5 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 
-render(<Router routes={routes} history={hashHistory} />
+render(<Router routes={routes} history={browserHistory} />
   ,document.getElementById('root'));
