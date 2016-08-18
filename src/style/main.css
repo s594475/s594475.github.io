@@ -99,6 +99,10 @@ ul {
 .work-list{
   width: 100%;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.work-list:hover{
+  width: 40%;
 }
 @media(min-width:600px){
   .work-list{
